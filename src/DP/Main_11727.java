@@ -1,7 +1,7 @@
 package DP;
-// BOJ 11726 - 2 X n 타일링 2
 import java.io.*;
 
+// BOJ 11726 - 2 X n 타일링 2
 public class Main_11727{
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

@@ -1,7 +1,7 @@
 package DP;
-// BOJ 1463 - 1 만들기
 import java.io.*;
 
+// BOJ 1463 - 1 만들기
 public class Main_1463{
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

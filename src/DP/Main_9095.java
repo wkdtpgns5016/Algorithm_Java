@@ -1,7 +1,7 @@
 package DP;
-// BOJ 9095 - 1,2,3 더하기
 import java.io.*;
 
+// BOJ 9095 - 1,2,3 더하기
 public class Main_9095{
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
