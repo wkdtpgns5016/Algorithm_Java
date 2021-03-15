@@ -3,7 +3,7 @@ package Implement;
 import java.io.*;
 
 // BOJ 10820 - 문자열 분석
-// 소문자는 97~122 대문자는 65~90 숫자는 46~57 공백은 32
+// 소문자는 97~122 대문자는 65~90 숫자는 48~57 공백은 32
 public class Main_10820 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
