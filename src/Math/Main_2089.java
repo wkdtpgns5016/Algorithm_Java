@@ -1,54 +1,30 @@
 package Math;
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 
 // BOJ 1212 - -2진수
 public class Main_2089 {
     public static void main(String[] args) throws IOException {
+        // 풀다가 막혀서 검색함 : https://dundung.tistory.com/27 참고
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        String num = br.readLine();
 
-        for(int i=0;i<num.length();i++) {
+        int n = Integer.parseInt(br.readLine());
+        List<Integer> list = new ArrayList<>();
 
+        if(n==0) //n이 0 일때
+            bw.write(Integer.toString(n));
+
+        while(n!=0) {
+            list.add(Math.abs(n%-2));
+            n=(int)Math.ceil((double)n/-2);
+        }
+
+        for(int i=list.size()-1; i>=0; i--){
+            bw.write(Integer.toString(list.get(i)));
         }
         bw.flush();
     }
-
-    public static String calcBinary(char n){
-        String binary="";
-        int num = n - '0';
-        int sub = maxNum(num);
-        int[] arr = new int[sub+1];
-        while(num >0){
-            sub = maxNum(num);
-            arr[sub]++;
-            num -= getDouble(sub);
-        }
-
-        for(int i=arr.length-1;i>=0;i--){
-            if(arr[i] == 1){
-                binary += "1";
-            }
-            else binary += "0";
-        }
-
-        return binary;
-    }
-    public static int maxNum(int n){
-        int i = 0;
-        while(n != 1 || n != -1){
-            n = n/(-2);
-            i++;
-        }
-        return i;
-    }
-    public static int getDouble(int n){
-        int num = 1;
-        for(int i=0;i<n;i++){
-            num *=2;
-        }
-        return num;
-    }
-
 }

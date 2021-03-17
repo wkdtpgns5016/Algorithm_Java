@@ -32,7 +32,6 @@ public class Main_2745 {
             }
             n *= b;
         }
-
         return a;
     }
 }
