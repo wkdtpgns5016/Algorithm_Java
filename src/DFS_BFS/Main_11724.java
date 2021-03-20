@@ -44,6 +44,7 @@ public class Main_11724 {
     public static int getConnectedComponent(LinkedList<Integer>[] list, boolean[] visited){
         int count = 0;
 
+        // 방문하지 않은 노드를 DFS 탐색
         for(int i=1;i<visited.length;i++){
             if(!visited[i]) {
                 DFS_list(i,list,visited);
