@@ -5,7 +5,7 @@ import java.util.StringTokenizer;
 
 // BOJ 9466 - 텀프로젝트
 public class Main_9466 {
-    // 블로그 참조 - https://geehye.github.io/baekjoon-9466/#
+    // 블로그 참조 : 깊이우선탐색적용 - https://geehye.github.io/baekjoon-9466/#
     static int[] arr;
     static boolean[] visited, done;
     static int count;
